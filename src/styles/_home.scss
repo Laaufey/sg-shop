@@ -1,0 +1,16 @@
+.Home {
+  display: grid;
+  grid-template-rows: repeat (4, 40vh);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  h1 {
+    color: hotpink;
+    font-size: 1em;
+  }
+}
+
+.bigwindow {
+  @include gridItem(1, -1, 1, 2);
+  background-color: palegoldenrod;
+  height: 40vh;
+  border-bottom: 1px solid #333333;
+}

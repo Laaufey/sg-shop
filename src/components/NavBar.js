@@ -6,15 +6,29 @@ export default function Nav() {
     <header>
       <div>
         <nav>
-          <NavLink to="/fragrances">Fragrances</NavLink>
-          <NavLink to="/makeup">Make-Up</NavLink>
-          <NavLink to="/skincare">Skincare</NavLink>
-          <NavLink to="/" exact>
-            SG LOGO
-          </NavLink>
-          <NavLink to="/brands">Brands</NavLink>
-          <NavLink to="/about">About</NavLink>
-          <NavLink to="/cart">Cart</NavLink>
+          <ul>
+            <li>
+              <NavLink to="/fragrances">Fragrances</NavLink>
+            </li>
+            <li>
+              <NavLink to="/makeup">Make-Up</NavLink>
+            </li>
+            <li>
+              <NavLink to="/skincare">Skincare</NavLink>
+            </li>
+            <li>
+              <NavLink to="/">SG LOGO</NavLink>
+            </li>
+            <li>
+              <NavLink to="/brands">Brands</NavLink>
+            </li>
+            <li>
+              <NavLink to="/about">About</NavLink>
+            </li>
+            <li>
+              <NavLink to="/cart">Cart</NavLink>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
