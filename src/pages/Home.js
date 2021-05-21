@@ -1,5 +1,13 @@
 import React from "react";
+import BigWindow from "../components/BigWindow";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-export default function Home() {
-  return <h1>Home Page!</h1>;
+function Home() {
+  return (
+    <div className="Home">
+      <BigWindow />
+    </div>
+  );
 }
+
+export default Home;
