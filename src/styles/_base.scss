@@ -8,3 +8,41 @@
   height: 100%;
   width: 100%;
 }
+
+@mixin btn($color, $background) {
+  color: $color;
+  background-color: $background;
+  border-radius: 20em;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 0.7em;
+  border: 1px solid black;
+  &:hover {
+    color: $background;
+    background-color: $color;
+  }
+}
+
+@font-face {
+  font-family: "Butler";
+  src: local(Butler), format("woff");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Butler-UltraLight";
+  src: local(Butler-UltraLight), format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ApercuPro-Medium";
+  src: local(ApercuPro-Medium), format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ApercuPro-ExtraLight";
+  src: local(ApercuPro-ExtraLight),
+    url("../fonts/ApercuPro-ExtraLight.woff") format("woff");
+  font-weight: normal;
+}

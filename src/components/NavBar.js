@@ -1,7 +1,11 @@
+import { propTypes } from "@sanity/block-content-to-react";
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-export default function Nav() {
+import Logo from "../media/logo.png";
+
+export default function Nav(props) {
+  console.log(props.notificationsCount);
   return (
     <header>
       <div>
@@ -17,7 +21,9 @@ export default function Nav() {
               <NavLink to="/skincare">Skincare</NavLink>
             </li>
             <li>
-              <NavLink to="/">SG LOGO</NavLink>
+              <NavLink to="/">
+                <img src={Logo} className="logo" />
+              </NavLink>
             </li>
             <li>
               <NavLink to="/brands">Brands</NavLink>
@@ -26,7 +32,7 @@ export default function Nav() {
               <NavLink to="/about">About</NavLink>
             </li>
             <li>
-              <NavLink to="/cart">Cart</NavLink>
+              <NavLink to="/cart">Cart({props.notificationsCount})</NavLink>
             </li>
           </ul>
         </nav>

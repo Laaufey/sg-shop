@@ -1,0 +1,48 @@
+.bannerLeft {
+  @include gridItem(1, 3, auto, auto);
+  border-bottom: 1px solid #333333;
+}
+.bannerRight {
+  @include gridItem(3, -1, auto, auto);
+  border-bottom: 1px solid #333333;
+}
+
+.bannerText {
+  margin: auto;
+  h1 {
+    margin: 70px 120px 0 70px;
+    font-family: "Butler-UltraLight";
+  }
+  p {
+    margin: 2em 120px 2em 70px;
+    font-family: "ApercuPro-ExtraLight";
+  }
+  button {
+    margin: 10px 70px;
+    color: white;
+    background-color: black;
+    width: 30%;
+    padding: 15px 10px;
+  }
+}
+.bannerImg {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  .bannerImg {
+    flex-shrink: 0;
+    min-height: 100%;
+    width: 100%;
+  }
+}
+
+.bannerOne {
+  background-color: #dbebf4;
+}
+.bannerTwo {
+  background-color: #fffbd4;
+}
+.bannerThree {
+  background-color: #dbf4e4;
+}

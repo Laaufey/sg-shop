@@ -1,6 +1,6 @@
 export default {
-  name: "product",
-  title: "Product",
+  name: "cosmetics",
+  title: "Cosmetics",
   type: "document",
   fields: [
     {
@@ -20,7 +20,7 @@ export default {
     {
       title: "Default variant",
       name: "defaultProductVariant",
-      type: "productVariant",
+      type: "cosmeticVariant",
     },
     {
       title: "Variants",
@@ -29,7 +29,7 @@ export default {
       of: [
         {
           title: "Variant",
-          type: "productVariant",
+          type: "cosmeticVariant",
         },
       ],
     },
@@ -74,12 +74,11 @@ export default {
       type: "localeBlockContent",
     },
   ],
-
   preview: {
     select: {
       title: "title",
       manufactor: "manufactor.title",
-      media: "defaultProductVariant.images",
+      media: "defaultProductVariant.images[0]",
     },
   },
 };

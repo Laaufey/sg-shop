@@ -1,0 +1,19 @@
+.brandPage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 100px;
+  gap: 30px;
+  a {
+    justify-self: center;
+    text-decoration: none;
+    h2 {
+      color: black;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+  img {
+    width: 300px;
+    border: 1px solid black;
+  }
+}

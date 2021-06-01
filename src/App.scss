@@ -1,11 +1,34 @@
 @import ".//styles/base";
 @import "./styles/home";
 @import "./styles/cart";
+@import "./styles/brands";
+@import "./styles/makeup";
+@import "./styles/banner";
+@import "./styles/newsletter";
+@import "./styles/singleProduct";
+@import "./styles/footer";
+@import "./styles/popup";
+
 .App {
   text-align: center;
   background-color: pink;
+  h1 {
+    font-family: "Butler-UltraLight";
+  }
 }
-
+.pageName {
+  font-family: "Butler-UltraLight";
+  text-align: center;
+  margin: 50px;
+}
+main,
+.Home {
+  position: relative;
+}
+// Screen
+.logo {
+  height: 100px;
+}
 nav {
   position: relative;
   width: 100%;
@@ -26,6 +49,91 @@ nav {
     a {
       text-decoration: none;
       color: black;
+    }
+  }
+}
+article {
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.9em;
+    text-transform: uppercase;
+  }
+  img {
+    align-self: center;
+    height: 10rem;
+    cursor: pointer;
+  }
+  .productTitle {
+    margin-bottom: 5px;
+  }
+  p {
+    margin: 0;
+    margin-bottom: 1em;
+  }
+  h4 {
+    margin: 0;
+    margin-top: auto;
+  }
+  button {
+    @include btn(black, white);
+    margin-top: auto;
+    align-self: center;
+  }
+}
+/*button {
+  border: solid 1px black;
+  border-radius: 20em;
+  width: 10em;
+  align-self: center;
+  color: black;
+  background-color: white;
+  margin-top: auto;
+  cursor: pointer;
+  text-transform: uppercase;
+  &:hover {
+    color: white;
+    background-color: black;
+  }
+}*/
+button {
+  @include btn(white, black);
+}
+
+// Ipad Pro
+@media only screen and (max-width: 1024px) {
+  nav {
+    li {
+      a {
+        color: blue;
+      }
+    }
+  }
+}
+
+// Ipad
+@media only screen and (max-width: 768px) {
+  nav {
+    li {
+      a {
+        color: hotpink;
+      }
+    }
+  }
+}
+
+// Mobile
+@media only screen and (max-width: 600px) {
+  nav {
+    li {
+      a {
+        color: blueviolet;
+      }
     }
   }
 }

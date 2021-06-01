@@ -2,15 +2,73 @@
   display: grid;
   grid-template-rows: repeat (4, 40vh);
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  p {
+    font-family: "ApercuPro-ExtraLight";
+  }
   h1 {
-    color: hotpink;
-    font-size: 1em;
+    font-family: "Butler-UltraLight";
   }
 }
 
 .bigwindow {
   @include gridItem(1, -1, 1, 2);
   background-color: palegoldenrod;
-  height: 40vh;
+  background-image: url("../media/bigWindow.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  width: 100%;
   border-bottom: 1px solid #333333;
+  //background-size: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  .bigImg {
+    width: 100%;
+    float: right;
+    border-bottom: 1px solid #333333;
+  }
+  .text {
+    margin: 20%;
+  }
+}
+/*.shopNow {
+  margin-top: 10px;
+  color: white;
+  background-color: black;
+  width: 30%;
+  padding: 15px 5px;
+}*/
+.headers {
+  @include gridItem(1, -1, auto, auto);
+
+  h1 {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    color: black;
+    text-align: center;
+  }
+  border-bottom: 1px solid #333333;
+  div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 2rem;
+    margin: 1rem 5rem;
+    margin-bottom: 100px;
+
+    /*article {
+      text-align: center;
+      display: flex;
+      flex-flow: column;
+      padding: 1rem 2rem;
+      margin: 1rem 0;
+      img {
+        align-self: center;
+        height: 10rem;
+        padding-bottom: 1rem;
+        cursor: pointer;
+      }
+      h3 {
+        font-family: "ApercuPro-Medium";
+      }
+    }*/
+  }
 }

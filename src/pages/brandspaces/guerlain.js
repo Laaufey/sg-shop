@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import sanityClient from "../client";
+import sanityClient from "../../client";
 
-export default function Makeup(props) {
+export default function Guerlain(props) {
   const [postProduct, setPost] = useState(null);
   const cartArray = props.cartItems;
 
@@ -31,11 +31,11 @@ export default function Makeup(props) {
     <main className="Makeup pageStructure">
       {console.log(cartArray)}
       <section>
-        <h1 className="pageName">Makeup</h1>
+        <h1 className="pageName">Guerlain</h1>
         <div className="showProducts">
           {postProduct &&
             postProduct.map((product, index) => {
-              if (product.tags[2] == "makeup") {
+              if (product.tags[1] == "GUERLAIN") {
                 return (
                   <article>
                     {console.log(product.tags)}

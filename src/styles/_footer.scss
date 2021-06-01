@@ -1,0 +1,15 @@
+.footer {
+  @include gridItem(1, -1, auto, auto);
+  width: 100%;
+  border-top: 1px solid #333333;
+  background-color: #ffe8ee;
+  height: 15em;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px 0;
+}
+
+.logoFooter {
+  height: 150px;
+}
