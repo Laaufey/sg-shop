@@ -4,6 +4,9 @@ import sanityClient from "../client";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 import Popup from "../components/popup";
+import Recommended from "../components/recommended";
+import Similar from "../components/similar";
+
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
   return builder.image(source);
@@ -101,6 +104,8 @@ export default function SingleProduct(props) {
           />
         </div>
       </article>
+      <Recommended />
+      <Similar />
     </main>
   );
 }

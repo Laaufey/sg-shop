@@ -17,3 +17,15 @@
     border: 1px solid black;
   }
 }
+
+// Ipad
+@media only screen and (max-width: 768px) {
+  .brandPage {
+    h2 {
+      font-size: 1em;
+    }
+    img {
+      width: 200px;
+    }
+  }
+}

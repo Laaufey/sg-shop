@@ -8,9 +8,14 @@
 }
 
 .bannerText {
+  display: grid;
   margin: auto;
+  div {
+    align-self: center;
+    justify-self: center;
+  }
   h1 {
-    margin: 70px 120px 0 70px;
+    margin: 2em 120px 0 70px;
     font-family: "Butler-UltraLight";
   }
   p {
@@ -30,11 +35,11 @@
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  .bannerImg {
+  /*.bannerImg {
     flex-shrink: 0;
     min-height: 100%;
     width: 100%;
-  }
+  }*/
 }
 
 .bannerOne {
@@ -45,4 +50,68 @@
 }
 .bannerThree {
   background-color: #dbf4e4;
+}
+
+// Ipad Pro
+@media only screen and (max-width: 1024px) {
+  .bannerImg {
+    height: 70vh;
+    .imgOne,
+    .imgTwo,
+    .imgThree {
+      height: 100%;
+    }
+  }
+}
+
+// Ipad
+@media only screen and (max-width: 768px) {
+  .bannerImg {
+    height: 50vh;
+  }
+  .bannerText {
+    height: 50vh;
+    h1 {
+      font-size: 1.5em;
+    }
+    p {
+      font-size: 0.85em;
+      margin: 2em 5em 2em 70px;
+    }
+    button {
+      width: 40%;
+    }
+  }
+}
+// Mobile
+@media only screen and (max-width: 600px) {
+  .bannerImg {
+    height: 30vh;
+    .imgOne,
+    .imgTwo,
+    .imgThree {
+      width: auto;
+      height: auto;
+      max-width: auto;
+      max-height: 130%;
+    }
+  }
+  .bannerText {
+    height: 30vh;
+
+    h1 {
+      font-size: 1em;
+      margin-right: 2em;
+      margin-left: 35px;
+    }
+    p {
+      display: none;
+    }
+    button {
+      margin-left: 35px;
+      width: 60%;
+      padding: 1em;
+      font-size: 0.6em;
+    }
+  }
 }

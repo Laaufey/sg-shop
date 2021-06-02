@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "../client";
 
-export default function NewArrivals(props) {
+export default function Recommended(props) {
   const [postProduct, setPost] = useState(null);
   const cartArray = props.cartItems;
 
@@ -30,11 +30,11 @@ export default function NewArrivals(props) {
   return (
     <div className="headers">
       {console.log(cartArray)}
-      <h1>New Arrivals!</h1>
-      <div className="newarrivals">
+      <h1>Recommended for you</h1>
+      <div className="bestSellers">
         {postProduct &&
           postProduct.map((product, index) => {
-            if (product.tags[0] == "newarrivals") {
+            if (product.tags[0] == "bestseller") {
               return (
                 <article>
                   <Link
@@ -43,12 +43,10 @@ export default function NewArrivals(props) {
                   >
                     <span key={index}>
                       <img src={product.defaultProductVariant.imageUrl} />
-                      <h3 className="productTitle">
-                        {product.tags[1] + " " + product.title}
-                      </h3>
+                      <h3 className="productTitle">{product.title}</h3>
                     </span>
                   </Link>
-                  <p>{product.defaultProductVariant.price + "kr"}</p>
+                  <p>{product.defaultProductVariant.price + "kr"}</p>{" "}
                   <h4 className="stars">*****</h4>
                   <button onClick={() => handleIncrement(product.slug.current)}>
                     Add to cart

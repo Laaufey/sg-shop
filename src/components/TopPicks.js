@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "../client";
 
-export default function TopPicks() {
+export default function TopPicks(props) {
   const [postProduct, setPost] = useState(null);
+  const cartArray = props.cartItems;
 
   useEffect(() => {
     sanityClient
@@ -22,8 +23,13 @@ export default function TopPicks() {
       .catch(console.error);
   }, []);
 
+  const handleIncrement = (slug) => {
+    props.editCartItems(slug, 1);
+  };
+
   return (
     <div className="headers">
+      {console.log(cartArray)}
       <h1>Our Top Picks!</h1>
       <div className="topPicks">
         {postProduct &&
@@ -37,14 +43,15 @@ export default function TopPicks() {
                   >
                     <span key={index}>
                       <img src={product.defaultProductVariant.imageUrl} />
-                      <h3 className="productTitle">
-                        {product.tags[1] + " " + product.title}
-                      </h3>
+                      <h3 className="productTitle">{product.tags[1]}</h3>
+                      <h3>{product.title}</h3>
                     </span>
                   </Link>
                   <p>{product.defaultProductVariant.price + "kr"}</p>
                   <h4 className="stars">*****</h4>
-                  <button>Add to cart</button>
+                  <button onClick={() => handleIncrement(product.slug.current)}>
+                    Add to cart
+                  </button>
                 </article>
               );
             }

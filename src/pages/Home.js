@@ -9,15 +9,15 @@ import ThirdBanner from "../components/ThirdBanner";
 import Newsletter from "../components/Newsletter";
 // import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-function Home() {
+function Home(props) {
   return (
     <div className="Home">
       <BigWindow />
-      <TopPicks />
+      <TopPicks editCartItems={props.editCartItems} />
       <Banner />
-      <NewArrivals />
+      <NewArrivals editCartItems={props.editCartItems} />
       <SecondBanner />
-      <BestSellers />
+      <BestSellers editCartItems={props.editCartItems} />
       <ThirdBanner />
       <Newsletter />
     </div>

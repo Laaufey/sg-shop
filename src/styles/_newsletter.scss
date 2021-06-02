@@ -2,9 +2,14 @@
   border-bottom: 1px solid #333333;
   border-right: 1px solid #333333;
   @include gridItem(1, 3, auto, auto);
+  display: grid;
   div {
     padding: 100px 25%;
     display: grid;
+    justify-self: center;
+    h1 {
+      font-family: "Butler";
+    }
     p {
       font-family: "ApercuPro-ExtraLight";
       font-size: 1.3em;
@@ -19,9 +24,14 @@
 }
 
 .shipping {
+  display: grid;
   border-bottom: 1px solid #333333;
   @include gridItem(3, -1, auto, auto);
+  h1 {
+    font-family: "Butler";
+  }
   div {
+    justify-self: center;
     padding: 100px 25%;
     li {
       font-family: "ApercuPro-ExtraLight";
@@ -36,4 +46,33 @@
 .check li:before {
   content: "✓ ";
   font-weight: bold;
+}
+
+// Ipad
+@media only screen and (max-width: 768px) {
+  .newsLetter {
+    h1 {
+      margin-bottom: 0;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Mobile
+@media only screen and (max-width: 600px) {
+  .newsLetter {
+    @include gridItem(1, -1, auto, auto);
+    div {
+      padding: 50px 25%;
+    }
+    border-right: none;
+  }
+  .shipping {
+    @include gridItem(1, -1, auto, auto);
+    div {
+      padding: 50px 25%;
+    }
+  }
 }

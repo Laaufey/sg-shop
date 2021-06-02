@@ -70,20 +70,18 @@ export default function App() {
       {console.log(notificationsCount)}
       <NavBar notificationsCount={notificationsCount}></NavBar>
       <Switch>
-        <Route component={Home} path="/" exact editCartItems={editCartItems} />
-        <Route
-          component={Fragrances}
-          path="/fragrances"
-          editCartItems={editCartItems}
-        />
+        <Route path="/" exact>
+          <Home editCartItems={editCartItems} />
+        </Route>
+        <Route path="/fragrances">
+          <Fragrances editCartItems={editCartItems} />
+        </Route>
         <Route path="/makeup">
           <Makeup editCartItems={editCartItems} />
         </Route>
-        <Route
-          component={Skincare}
-          path="/skincare"
-          editCartItems={editCartItems}
-        />
+        <Route path="/skincare">
+          <Skincare editCartItems={editCartItems} />
+        </Route>
         <Route path="/product/:slug">
           <SingleProduct editCartItems={editCartItems} />
         </Route>

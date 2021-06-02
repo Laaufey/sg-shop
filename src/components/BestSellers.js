@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "../client";
 
-export default function BestSellers() {
+export default function BestSellers(props) {
   const [postProduct, setPost] = useState(null);
+  const cartArray = props.cartItems;
 
   useEffect(() => {
     sanityClient
@@ -22,8 +23,13 @@ export default function BestSellers() {
       .catch(console.error);
   }, []);
 
+  const handleIncrement = (slug) => {
+    props.editCartItems(slug, 1);
+  };
+
   return (
     <div className="headers">
+      {console.log(cartArray)}
       <h1>Best Sellers!</h1>
       <div className="bestSellers">
         {postProduct &&
@@ -42,7 +48,9 @@ export default function BestSellers() {
                   </Link>
                   <p>{product.defaultProductVariant.price + "kr"}</p>{" "}
                   <h4 className="stars">*****</h4>
-                  <button>Add to cart</button>
+                  <button onClick={() => handleIncrement(product.slug.current)}>
+                    Add to cart
+                  </button>
                 </article>
               );
             }

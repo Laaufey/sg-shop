@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "../client";
 
-export default function Skincare() {
+export default function Skincare(props) {
   const [postProduct, setPost] = useState(null);
+  const cartArray = props.cartItems;
 
   useEffect(() => {
     sanityClient
@@ -21,8 +22,13 @@ export default function Skincare() {
       .then((product) => setPost(product))
       .catch(console.error);
   }, []);
+
+  const handleIncrement = (slug) => {
+    props.editCartItems(slug, 1);
+  };
   return (
     <main className="skincare pageStructure">
+      {console.log(cartArray)}
       <h1 className="pageName">Skincare</h1>
       <div className="showProducts">
         {postProduct &&
@@ -42,7 +48,9 @@ export default function Skincare() {
                   </Link>
                   <p>{product.defaultProductVariant.price + "kr"}</p>
                   <h4>*****</h4>
-                  <button>Add to cart</button>
+                  <button onClick={() => handleIncrement(product.slug.current)}>
+                    Add to cart
+                  </button>
                 </article>
               );
             }

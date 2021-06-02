@@ -1,5 +1,9 @@
 import React from "react";
 import CartList from "../components/CartList";
+import { NavLink } from "react-router-dom";
+
+import Recommended from "../components/recommended";
+import Similar from "../components/similar";
 
 export default function Cart(props) {
   console.log(props.cartItems.map((i) => i.amount));
@@ -13,21 +17,28 @@ export default function Cart(props) {
             <p>Your cart is empty</p>
           </div>
           <div>
-            <button>Back to shop</button>
+            <NavLink to="/">
+              <button>Back to shop</button>
+            </NavLink>
           </div>
         </div>
       );
     } else {
-      return <CartList cartItems={props.cartItems} />;
+      return (
+        <CartList
+          cartItems={props.cartItems}
+          editCartItems={props.editCartItems}
+        />
+      );
     }
   }
-  function FullCart() {
-    return <CartList cartItems={props.cartItems} />;
-  }
+
   return (
     <main>
       <div>
         <EmptyCart />
+        <Recommended />
+        <Similar />
       </div>
     </main>
   );

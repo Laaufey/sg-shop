@@ -12,7 +12,7 @@ export default function CartList(props) {
         </div>
 
         {props.cartItems.map((i) => {
-          return <CartItem item={i} />;
+          return <CartItem item={i} editCartItems={props.editCartItems} />;
         })}
       </div>
       <div>

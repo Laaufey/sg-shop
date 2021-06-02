@@ -5,18 +5,18 @@
   p {
     font-family: "ApercuPro-ExtraLight";
   }
-  h1 {
-    font-family: "Butler-UltraLight";
-  }
 }
 
 .bigwindow {
   @include gridItem(1, -1, 1, 2);
   background-color: palegoldenrod;
-  background-image: url("../media/bigWindow.jpg");
+  //background-image: url("../media/bigWindow.jpg");
+  //background-image: url("../media/bioeffect-bigwindow.jpg");
+  background-image: url("../media/chanel-bigwindow.jpg");
   background-position: right;
   background-repeat: no-repeat;
   width: 100%;
+
   border-bottom: 1px solid #333333;
   //background-size: 100%;
   display: grid;
@@ -28,6 +28,9 @@
   }
   .text {
     margin: 20%;
+    h1 {
+      font-family: "Butler";
+    }
   }
 }
 /*.shopNow {
@@ -45,13 +48,18 @@
     margin-bottom: 30px;
     color: black;
     text-align: center;
+    font-family: "Butler-UltraLight";
+  }
+
+  p {
+    font-family: "ApercuPro-ExtraLight";
   }
   border-bottom: 1px solid #333333;
   div {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 2rem;
-    margin: 1rem 5rem;
+    grid-template-columns: repeat(4, 1fr);
+    // grid-gap: 2rem;
+    margin: 1rem auto;
     margin-bottom: 100px;
 
     /*article {
@@ -66,9 +74,47 @@
         padding-bottom: 1rem;
         cursor: pointer;
       }
-      h3 {
-        font-family: "ApercuPro-Medium";
-      }
+
     }*/
+  }
+}
+// Ipad Pro
+@media only screen and (max-width: 1024px) {
+  .bigwindow {
+    background-position: 90%;
+  }
+  .headers {
+    article {
+      img {
+        height: 8rem;
+      }
+      h3 {
+        font-size: 0.9em;
+      }
+    }
+  }
+}
+// Ipad
+@media only screen and (max-width: 768px) {
+  .bigwindow {
+    // background-image: url("../media/chanel-smallwindow.jpg");
+    background-position: 80%;
+  }
+  .headers {
+    div {
+      grid-template-columns: repeat(2, 1fr);
+      margin: auto;
+    }
+  }
+}
+
+// Mobile
+@media only screen and (max-width: 600px) {
+  .bigwindow {
+    .text {
+      p {
+        display: none;
+      }
+    }
   }
 }
