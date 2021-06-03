@@ -9,6 +9,14 @@
 @import "./styles/footer";
 @import "./styles/popup";
 
+// HIDDEN ON SCREENS LARGER THAN 600px
+
+.hidden,
+.mobile-navbar,
+.onMobile {
+  display: none;
+}
+
 .App {
   text-align: center;
   background-color: pink;
@@ -20,6 +28,9 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+  }
+  header {
+    position: sticky;
   }
 }
 
@@ -36,11 +47,13 @@ main,
 .logo {
   height: 100px;
 }
-nav {
+.nav {
   position: relative;
   width: 100%;
   background-color: white;
   border-bottom: 1px solid #333333;
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr;
   ul {
     display: flex;
     width: 100%;
@@ -59,6 +72,13 @@ nav {
     }
   }
 }
+.nav-mobile {
+  display: none;
+}
+.menuIcon {
+  display: none;
+}
+
 article {
   text-align: center;
   display: flex;
@@ -118,10 +138,9 @@ button {
 
 // Ipad Pro
 @media only screen and (max-width: 1024px) {
-  nav {
+  .nav {
     li {
       a {
-        color: blue;
       }
     }
   }
@@ -134,10 +153,10 @@ button {
 
 // Ipad
 @media only screen and (max-width: 768px) {
-  nav {
+  .nav {
     li {
       a {
-        color: hotpink;
+        font-size: 0.75em;
       }
     }
   }
@@ -145,12 +164,71 @@ button {
 
 // Mobile
 @media only screen and (max-width: 600px) {
-  nav {
+  .onScreens {
+    display: none;
+  }
+  .mobile-navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 30px 10px;
+    border-bottom: 1px solid #333333;
+    > div,
+    img {
+      justify-self: center;
+      align-self: center;
+    }
+    .logo {
+      height: 70px;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      text-transform: uppercase;
+      font-size: 1.6em;
+      font-family: "ApercuPro-Medium";
+    }
+    i.fas {
+      font-size: 1.8em;
+      cursor: pointer;
+    }
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 131px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    padding-top: 30px;
+    ul {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+    }
     li {
+      margin: 1em;
       a {
-        color: blueviolet;
+        color: black;
+        font-size: 1.8em;
+        &:hover {
+          color: #ffe8ee;
+        }
       }
     }
+  }
+  .nav.active {
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+  .menuIcon,
+  .onMobile {
+    display: block;
   }
 }
 

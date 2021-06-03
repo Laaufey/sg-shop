@@ -1,16 +1,35 @@
 import { propTypes } from "@sanity/block-content-to-react";
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import Logo from "../media/logo.png";
 
 export default function Nav(props) {
   console.log(props.notificationsCount);
+  const handleClick = () => {
+    setClick(!clicked);
+  };
+  const [clicked, setClick] = useState(false);
+
   return (
     <header>
+      <div className="mobile-navbar">
+        <div className="menuIcon" onClick={handleClick}>
+          <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>
+        </div>
+        <img src={Logo} className="logo" />
+        <div>
+          <NavLink to="/cart">Cart({props.notificationsCount})</NavLink>
+        </div>
+      </div>
       <div>
-        <nav>
+        <nav className={clicked ? "nav active" : "nav"}>
           <ul>
+            <li className="onMobile">
+              <NavLink to="/" className="nav-home">
+                Home
+              </NavLink>
+            </li>
             <li>
               <NavLink to="/fragrances">Fragrances</NavLink>
             </li>
@@ -20,18 +39,22 @@ export default function Nav(props) {
             <li>
               <NavLink to="/skincare">Skincare</NavLink>
             </li>
-            <li>
+          </ul>
+          <ul>
+            <li className="onScreens">
               <NavLink to="/">
                 <img src={Logo} className="logo" />
               </NavLink>
             </li>
+          </ul>
+          <ul>
             <li>
               <NavLink to="/brands">Brands</NavLink>
             </li>
             <li>
               <NavLink to="/about">About</NavLink>
             </li>
-            <li>
+            <li className="onScreens">
               <NavLink to="/cart">Cart({props.notificationsCount})</NavLink>
             </li>
           </ul>

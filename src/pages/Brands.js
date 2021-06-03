@@ -11,7 +11,7 @@ import bioeffectBrand from "../media/brandImages/BIOEFFECT-Brand-image.jpg";
 
 export default function Brands() {
   return (
-    <div>
+    <main>
       <h1 className="pageName">Brands</h1>
       <div className="brandPage">
         <NavLink to="/chanel">
@@ -45,6 +45,6 @@ export default function Brands() {
           <h2>Elizabeth Arden</h2>
         </NavLink>
       </div>
-    </div>
+    </main>
   );
 }

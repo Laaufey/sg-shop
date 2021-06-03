@@ -38,6 +38,7 @@ export default function SingleProduct(props) {
         "imagesUrl": images.asset->url
       },
       defaultProductVariant{
+        title,
         "imageUrl": images[0].asset->url,
         "extraImg": images[1].asset->url,
         price,
@@ -58,7 +59,7 @@ export default function SingleProduct(props) {
         <Popup singleProduct={singleProduct} handleClose={closePopup} />
       )}
       <article className="singleProductPage">
-        <div>
+        <div className="addBorder">
           <img
             className="singleImg"
             src={singleProduct.defaultProductVariant.imageUrl}
@@ -70,11 +71,13 @@ export default function SingleProduct(props) {
             <h2>{singleProduct.defaultProductVariant.price + "kr"}</h2>
 
             <h4>***** Reviews</h4>
-
+            <p className="prodInfo">
+              {singleProduct.defaultProductVariant.title}
+            </p>
             <button onClick={handleIncrement}>Add to cart</button>
           </div>
         </div>
-        <div>
+        <div className="addBorder">
           <div className="filtering">
             <li>
               <button onClick={() => setStatus(true)}>Description</button>

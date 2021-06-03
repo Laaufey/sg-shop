@@ -1,7 +1,7 @@
 .brandPage {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 0 100px;
+  padding: 0 100px 50px;
   gap: 30px;
   a {
     justify-self: center;
@@ -26,6 +26,16 @@
     }
     img {
       width: 200px;
+    }
+  }
+}
+
+// Mobile
+@media only screen and (max-width: 600px) {
+  .brandPage {
+    grid-template-columns: 1fr;
+    img {
+      width: 250px;
     }
   }
 }

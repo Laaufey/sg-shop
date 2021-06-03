@@ -12,7 +12,7 @@ export default function CartItem(props) {
       <div className="cartItem">
         <img src={props.item.defaultProductVariant.imageUrl} />
         <h1>{props.item.title}</h1>
-        <div>
+        <div className="btnInCart">
           <button className="down">-</button>
           <p>{props.item.amount}</p>
           <button className="up" onClick={handleIncrement}>

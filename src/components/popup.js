@@ -19,7 +19,8 @@ const Popup = (props) => {
           />
           <div>
             <h1>{props.singleProduct.title}</h1>
-            <p>Under title</p>
+            <p>{props.singleProduct.tags[1]}</p>
+            <p>Qty: 1</p>
             <h3>{props.singleProduct.defaultProductVariant.price + "kr"}</h3>
           </div>
           <div className="pop-buttons">

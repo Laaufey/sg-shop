@@ -3,16 +3,24 @@
   grid-template-columns: 50% 50%;
   padding: 0;
   margin: 0;
-
+  :nth-child(even) {
+    border-right: 1px solid white;
+  }
   > div {
     display: grid;
     border-right: 1px solid #333333;
     border-bottom: 1px solid #333333;
     padding: 10%;
+
     img,
     .aboutProduct {
       align-self: center;
       justify-self: center;
+    }
+    .prodInfo {
+      font-family: "ApercuPro-ExtraLight";
+      margin: 5px;
+      font-size: 0.8em;
     }
     .singleImg {
     }
@@ -57,4 +65,28 @@
 
 .show {
   text-align: left;
+}
+
+// Ipad
+@media only screen and (max-width: 768px) {
+  .filtering {
+    li {
+      button {
+        font-size: 0.8em;
+      }
+    }
+  }
+  .show {
+    font-size: 0.7em;
+  }
+}
+
+// Mobile
+@media only screen and (max-width: 600px) {
+  .singleProductPage {
+    grid-template-columns: 100%;
+    > div {
+      border: white;
+    }
+  }
 }

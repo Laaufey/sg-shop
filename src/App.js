@@ -34,6 +34,7 @@ export default function App() {
         title,
         slug,
         defaultProductVariant{
+          title,
           "imageUrl": images[0].asset->url,
           price
         },
