@@ -16,7 +16,8 @@ export default function Fragrances(props) {
           "imageUrl": images[0].asset->url,
           price
         },
-        tags
+        tags,
+        body
       }`
       )
       .then((product) => setPost(product))
@@ -47,7 +48,11 @@ export default function Fragrances(props) {
                     </span>
                   </Link>
                   <p>{product.defaultProductVariant.price + "kr"}</p>
-                  <h4>*****</h4>
+                  <h4 className="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </h4>
                   <button onClick={() => handleIncrement(product.slug.current)}>
                     Add to cart
                   </button>

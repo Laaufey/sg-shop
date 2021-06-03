@@ -30,6 +30,7 @@
     margin: 20%;
     h1 {
       font-family: "Butler";
+      font-size: 2.5em;
     }
   }
 }
@@ -99,6 +100,11 @@
   .bigwindow {
     // background-image: url("../media/chanel-smallwindow.jpg");
     background-position: 80%;
+    .text {
+      h1 {
+        font-size: 2em;
+      }
+    }
   }
   .headers {
     div {

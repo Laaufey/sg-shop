@@ -21,8 +21,9 @@ export default function SingleProduct(props) {
     props.editCartItems(slug, 1);
     setIsOpen(!isOpen);
     console.log(singleProduct);
-    console.log(singleProduct.variants[0].title);
+    //console.log(singleProduct.variants[0].title);
     console.log(singleProduct.variants.length);
+    console.log(singleProduct.defaultProductVariant.grams);
   };
 
   function Choose() {
@@ -45,7 +46,6 @@ export default function SingleProduct(props) {
     setIsOpen(!isOpen);
   };
   const [isOpen, setIsOpen] = useState(false);
-
   useEffect(() => {
     sanityClient
       .fetch(
@@ -57,6 +57,7 @@ export default function SingleProduct(props) {
       variants[],
       defaultProductVariant{
         title,
+        grams,
         "imageUrl": images[0].asset->url,
         "extraImg": images[1].asset->url,
         price,
@@ -91,7 +92,15 @@ export default function SingleProduct(props) {
               <option value="1">50 ml</option>
               <option value="2">30 ml</option>
             </select>
-            <h4>***** Reviews</h4>
+
+            <h4>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              Reviews
+            </h4>
             <p className="prodInfo">
               {singleProduct.defaultProductVariant.title}
             </p>

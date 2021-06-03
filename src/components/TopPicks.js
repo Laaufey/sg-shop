@@ -30,7 +30,7 @@ export default function TopPicks(props) {
   return (
     <div className="headers">
       {console.log(cartArray)}
-      <h1>Our Top Picks!</h1>
+      <h1>Our Top Picks</h1>
       <div className="topPicks">
         {postProduct &&
           postProduct.map((product, index) => {
@@ -48,7 +48,13 @@ export default function TopPicks(props) {
                     </span>
                   </Link>
                   <p>{product.defaultProductVariant.price + "kr"}</p>
-                  <h4 className="stars">*****</h4>
+                  <h4 className="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </h4>
                   <button onClick={() => handleIncrement(product.slug.current)}>
                     Add to cart
                   </button>

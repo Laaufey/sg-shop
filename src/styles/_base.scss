@@ -17,6 +17,7 @@
   text-transform: uppercase;
   padding: 0.7em;
   border: 1px solid black;
+  font-family: "ApercuMonoPro-Light";
   &:hover {
     color: $background;
     background-color: $color;
@@ -45,4 +46,10 @@
   src: local(ApercuPro-ExtraLight),
     url("../fonts/ApercuPro-ExtraLight.woff") format("woff");
   font-weight: normal;
+}
+
+@font-face {
+  font-family: "ApercuMonoPro-Light";
+  src: local(ApercuMonoPro-Light),
+    url("../fonts/ApercuMonoPro-Light.woff") format("woff");
 }
