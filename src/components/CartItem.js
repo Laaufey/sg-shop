@@ -5,7 +5,10 @@ export default function CartItem(props) {
   console.log(CartItem.length);
 
   const handleIncrement = () => {
-    props.editCartItems(props.slug, 1);
+    props.editCartItems(props.item.slug.current, 1);
+  };
+  const handleDecrement = () => {
+    props.editCartItems(props.item.slug.current, -1);
   };
   if (props.item.amount) {
     return (
@@ -13,7 +16,9 @@ export default function CartItem(props) {
         <img src={props.item.defaultProductVariant.imageUrl} />
         <h1>{props.item.title}</h1>
         <div className="btnInCart">
-          <button className="down">-</button>
+          <button className="down" onClick={handleDecrement}>
+            -
+          </button>
           <p>{props.item.amount}</p>
           <button className="up" onClick={handleIncrement}>
             +
