@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/sg-shop/static/css/main.73211efa.chunk.css",
-    "main.js": "/sg-shop/static/js/main.5b7a3a97.chunk.js",
-    "main.js.map": "/sg-shop/static/js/main.5b7a3a97.chunk.js.map",
+    "main.css": "/sg-shop/static/css/main.a5818d2c.chunk.css",
+    "main.js": "/sg-shop/static/js/main.8a6fd0f5.chunk.js",
+    "main.js.map": "/sg-shop/static/js/main.8a6fd0f5.chunk.js.map",
     "runtime-main.js": "/sg-shop/static/js/runtime-main.34e0b8a1.js",
     "runtime-main.js.map": "/sg-shop/static/js/runtime-main.34e0b8a1.js.map",
     "static/js/2.73678581.chunk.js": "/sg-shop/static/js/2.73678581.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.531b1a53.chunk.js": "/sg-shop/static/js/3.531b1a53.chunk.js",
     "static/js/3.531b1a53.chunk.js.map": "/sg-shop/static/js/3.531b1a53.chunk.js.map",
     "index.html": "/sg-shop/index.html",
-    "static/css/main.73211efa.chunk.css.map": "/sg-shop/static/css/main.73211efa.chunk.css.map",
+    "static/css/main.a5818d2c.chunk.css.map": "/sg-shop/static/css/main.a5818d2c.chunk.css.map",
     "static/js/2.73678581.chunk.js.LICENSE.txt": "/sg-shop/static/js/2.73678581.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/sg-shop/static/media/chanel-bigwindow.e7ff8009.jpg",
     "static/media/BIOEFFECT-Brand-image.4f33852d.jpg": "/sg-shop/static/media/BIOEFFECT-Brand-image.4f33852d.jpg",
@@ -32,7 +32,7 @@
   "entrypoints": [
     "static/js/runtime-main.34e0b8a1.js",
     "static/js/2.73678581.chunk.js",
-    "static/css/main.73211efa.chunk.css",
-    "static/js/main.5b7a3a97.chunk.js"
+    "static/css/main.a5818d2c.chunk.css",
+    "static/js/main.8a6fd0f5.chunk.js"
   ]
 }
