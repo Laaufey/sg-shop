@@ -1,10 +1,12 @@
 .bannerLeft {
   @include gridItem(1, 3, auto, auto);
   border-bottom: 1px solid #333333;
+  border-top: 1px solid #333333;
 }
 .bannerRight {
   @include gridItem(3, -1, auto, auto);
   border-bottom: 1px solid #333333;
+  border-top: 1px solid #333333;
 }
 
 .bannerText {
@@ -54,6 +56,9 @@
 
 // Ipad Pro
 @media only screen and (max-width: 1024px) {
+  .bannerText {
+    height: 70vh;
+  }
   .bannerImg {
     height: 70vh;
     .imgOne,

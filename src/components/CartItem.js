@@ -5,6 +5,10 @@ export default function CartItem(props) {
   console.log(CartItem.length);
 
   const handleIncrement = () => {
+    console.log(
+      "the total price is " +
+        props.item.amount * props.item.defaultProductVariant.price
+    );
     props.editCartItems(props.item.slug.current, 1);
   };
   const handleDecrement = () => {
@@ -24,7 +28,9 @@ export default function CartItem(props) {
             +
           </button>
         </div>
-        <h3>{props.item.defaultProductVariant.price + "kr"} </h3>
+        <h3>
+          {props.item.defaultProductVariant.price * props.item.amount + "kr"}
+        </h3>
       </div>
     );
   } else {

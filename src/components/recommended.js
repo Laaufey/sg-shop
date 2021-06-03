@@ -28,13 +28,13 @@ export default function Recommended(props) {
   };
 
   return (
-    <div className="headers">
+    <div className="headers recommended">
       {console.log(cartArray)}
       <h1>Recommended for you</h1>
       <div className="bestSellers">
         {postProduct &&
           postProduct.map((product, index) => {
-            if (product.tags[0] == "bestseller") {
+            if (product.tags[0] == "recommended") {
               return (
                 <article>
                   <Link

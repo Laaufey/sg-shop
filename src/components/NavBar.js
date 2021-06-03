@@ -17,7 +17,9 @@ export default function Nav(props) {
         <div className="menuIcon" onClick={handleClick}>
           <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>
         </div>
-        <img src={Logo} className="logo" />
+        <NavLink to="/">
+          <img src={Logo} className="logo" />
+        </NavLink>
         <div>
           <NavLink to="/cart">Cart({props.notificationsCount})</NavLink>
         </div>

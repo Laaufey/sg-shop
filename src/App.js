@@ -74,6 +74,9 @@ export default function App() {
         <Route path="/" exact>
           <Home editCartItems={editCartItems} />
         </Route>
+        <Route path="/sg-shop">
+          <Home editCartItems={editCartItems} />
+        </Route>
         <Route path="/fragrances">
           <Fragrances editCartItems={editCartItems} />
         </Route>

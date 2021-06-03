@@ -20,7 +20,27 @@ export default function SingleProduct(props) {
   const handleIncrement = () => {
     props.editCartItems(slug, 1);
     setIsOpen(!isOpen);
+    console.log(singleProduct);
+    console.log(singleProduct.variants[0].title);
+    console.log(singleProduct.variants.length);
   };
+
+  function Choose() {
+    if (singleProduct.variants === 0) {
+      return <p>N/A</p>;
+    } else {
+      return (
+        <label className="choose">
+          <p>Choose:</p>
+          <select>
+            <option value="1">{singleProduct.variants[0].title}</option>
+            <option value="1">{singleProduct.variants[1].title}</option>
+          </select>
+        </label>
+      );
+    }
+  }
+
   const closePopup = () => {
     setIsOpen(!isOpen);
   };
@@ -34,9 +54,7 @@ export default function SingleProduct(props) {
       _id,
       blurb,
       slug,
-      variants{
-        "imagesUrl": images.asset->url
-      },
+      variants[],
       defaultProductVariant{
         title,
         "imageUrl": images[0].asset->url,
@@ -69,7 +87,10 @@ export default function SingleProduct(props) {
           <div className="aboutProduct">
             <h1>{singleProduct.title}</h1>
             <h2>{singleProduct.defaultProductVariant.price + "kr"}</h2>
-
+            <select>
+              <option value="1">50 ml</option>
+              <option value="2">30 ml</option>
+            </select>
             <h4>***** Reviews</h4>
             <p className="prodInfo">
               {singleProduct.defaultProductVariant.title}

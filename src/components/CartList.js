@@ -27,6 +27,17 @@ export default function CartList(props) {
         </div>
         <div className="checkout">
           <p>Items subtotal:</p>
+          <label>
+            <input name="isGoing" type="checkbox" />
+            Do you want samples ?
+          </label>
+          <label>
+            <input name="shipping" type="radio" />
+            Pick up in store
+            <br />
+            <input name="shipping" type="radio" />
+            Send to my home
+          </label>
           <p>Shipping:</p>
           <div className="line"></div>
           <p>TOTAL:</p>

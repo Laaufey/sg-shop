@@ -28,13 +28,13 @@ export default function Similar(props) {
   };
 
   return (
-    <div className="headers">
+    <div className="headers similar">
       {console.log(cartArray)}
       <h1>Similar products</h1>
       <div className="bestSellers">
         {postProduct &&
           postProduct.map((product, index) => {
-            if (product.tags[0] == "bestseller") {
+            if (product.tags[0] == "similar") {
               return (
                 <article>
                   <Link
