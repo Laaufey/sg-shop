@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/sg-shop/static/css/main.878120c3.chunk.css",
-    "main.js": "/sg-shop/static/js/main.72af0e16.chunk.js",
-    "main.js.map": "/sg-shop/static/js/main.72af0e16.chunk.js.map",
-    "runtime-main.js": "/sg-shop/static/js/runtime-main.34e0b8a1.js",
-    "runtime-main.js.map": "/sg-shop/static/js/runtime-main.34e0b8a1.js.map",
-    "static/js/2.73678581.chunk.js": "/sg-shop/static/js/2.73678581.chunk.js",
-    "static/js/2.73678581.chunk.js.map": "/sg-shop/static/js/2.73678581.chunk.js.map",
-    "static/js/3.531b1a53.chunk.js": "/sg-shop/static/js/3.531b1a53.chunk.js",
-    "static/js/3.531b1a53.chunk.js.map": "/sg-shop/static/js/3.531b1a53.chunk.js.map",
+    "main.css": "/sg-shop/static/css/main.10d16a8e.chunk.css",
+    "main.js": "/sg-shop/static/js/main.849e430d.chunk.js",
+    "main.js.map": "/sg-shop/static/js/main.849e430d.chunk.js.map",
+    "runtime-main.js": "/sg-shop/static/js/runtime-main.e0ba11fd.js",
+    "runtime-main.js.map": "/sg-shop/static/js/runtime-main.e0ba11fd.js.map",
+    "static/js/2.7a156744.chunk.js": "/sg-shop/static/js/2.7a156744.chunk.js",
+    "static/js/2.7a156744.chunk.js.map": "/sg-shop/static/js/2.7a156744.chunk.js.map",
+    "static/js/3.7c7919ff.chunk.js": "/sg-shop/static/js/3.7c7919ff.chunk.js",
+    "static/js/3.7c7919ff.chunk.js.map": "/sg-shop/static/js/3.7c7919ff.chunk.js.map",
     "index.html": "/sg-shop/index.html",
-    "static/css/main.878120c3.chunk.css.map": "/sg-shop/static/css/main.878120c3.chunk.css.map",
-    "static/js/2.73678581.chunk.js.LICENSE.txt": "/sg-shop/static/js/2.73678581.chunk.js.LICENSE.txt",
+    "static/css/main.10d16a8e.chunk.css.map": "/sg-shop/static/css/main.10d16a8e.chunk.css.map",
+    "static/js/2.7a156744.chunk.js.LICENSE.txt": "/sg-shop/static/js/2.7a156744.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/sg-shop/static/media/chanel-bigwindow.e7ff8009.jpg",
     "static/media/BIOEFFECT-Brand-image.4f33852d.jpg": "/sg-shop/static/media/BIOEFFECT-Brand-image.4f33852d.jpg",
     "static/media/BIOTHERM-Brand-image.fe807168.jpg": "/sg-shop/static/media/BIOTHERM-Brand-image.fe807168.jpg",
@@ -27,12 +27,13 @@
     "static/media/bigWindow.7acb2c05.jpg": "/sg-shop/static/media/bigWindow.7acb2c05.jpg",
     "static/media/facebook.2437e42a.png": "/sg-shop/static/media/facebook.2437e42a.png",
     "static/media/instagram.1beae8d8.png": "/sg-shop/static/media/instagram.1beae8d8.png",
-    "static/media/sunscreen.aaeaa23b.jpg": "/sg-shop/static/media/sunscreen.aaeaa23b.jpg"
+    "static/media/sunscreen.aaeaa23b.jpg": "/sg-shop/static/media/sunscreen.aaeaa23b.jpg",
+    "static/media/unnur-sg.c32ad4b3.jpg": "/sg-shop/static/media/unnur-sg.c32ad4b3.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.34e0b8a1.js",
-    "static/js/2.73678581.chunk.js",
-    "static/css/main.878120c3.chunk.css",
-    "static/js/main.72af0e16.chunk.js"
+    "static/js/runtime-main.e0ba11fd.js",
+    "static/js/2.7a156744.chunk.js",
+    "static/css/main.10d16a8e.chunk.css",
+    "static/js/main.849e430d.chunk.js"
   ]
 }
