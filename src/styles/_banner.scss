@@ -93,6 +93,36 @@
     }
   }
 }
+// Mobile breack point horizontal
+@media only screen and (max-width: 1024px) and (min-width: 550px) {
+  .bannerImg {
+    height: 100vh;
+    .imgOne,
+    .imgTwo,
+    .imgThree {
+      width: auto;
+      height: auto;
+    }
+  }
+  .bannerText {
+    height: 100vh;
+
+    h1 {
+      font-size: 1em;
+      margin-right: 2em;
+      margin-left: 35px;
+    }
+    p {
+      display: block;
+    }
+    button {
+      margin-left: 35px;
+      width: 60%;
+      padding: 1em;
+      font-size: 0.6em;
+    }
+  }
+}
 // Mobile
 @media only screen and (max-width: 600px) {
   .bannerImg {

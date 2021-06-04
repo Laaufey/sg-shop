@@ -68,14 +68,14 @@
   .newsLetter {
     @include gridItem(1, -1, auto, auto);
     div {
-      padding: 50px 25%;
+      padding: 50px 50px;
     }
     border-right: none;
   }
   .shipping {
     @include gridItem(1, -1, auto, auto);
     div {
-      padding: 50px 25%;
+      padding: 50px 50px;
     }
   }
 }
