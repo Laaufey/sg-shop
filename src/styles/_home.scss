@@ -49,10 +49,10 @@
     .fa-circle {
       color: white;
       cursor: pointer;
-      opacity: 50%;
+      opacity: 0.5;
       padding: 1em;
       &:hover {
-        opacity: 100%;
+        opacity: 1;
       }
     }
   }
