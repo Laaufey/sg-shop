@@ -234,6 +234,13 @@ button {
   .onMobile {
     display: block;
   }
+  .cartNr {
+    position: absolute;
+    color: white;
+    right: 15.5%;
+    top: 52.5px;
+    font-size: 0.8em;
+  }
 }
 
 @media screen and (min-width: 1400px) {

@@ -22,8 +22,8 @@ export default function SingleProduct(props) {
     setIsOpen(!isOpen);
     console.log(singleProduct);
     //console.log(singleProduct.variants[0].title);
-    console.log(singleProduct.variants.length);
-    console.log(singleProduct.defaultProductVariant.grams);
+    //console.log(singleProduct.variants.length);
+    //console.log(singleProduct.defaultProductVariant.grams);
   };
 
   const handleClick = () => {
