@@ -20,7 +20,7 @@ export default function Nav(props) {
         <NavLink to="/">
           <img src={Logo} className="logo" />
         </NavLink>
-        <div>
+        <div className="sansCart">
           <NavLink to="/cart">Cart({props.notificationsCount})</NavLink>
         </div>
       </div>
