@@ -19,7 +19,7 @@
   padding: 1em;
   padding-top: 1.15em;
   border: 1px solid black;
-  font-family: "ApercuMonoPro-Light";
+  font-family: "ApercuMonoPro-Light", "Poppins", sans-serif;
   transition: all 0.3s ease;
   &:hover {
     color: $background;
@@ -41,8 +41,8 @@
 
 @font-face {
   font-family: "ApercuPro-Medium", "Poppins", sans-serif;
-  src: local(ApercuPro-Medium), format("woff");
   font-weight: 600;
+  src: local(ApercuPro-Medium), format("woff");
 }
 
 @font-face {
