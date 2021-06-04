@@ -2,11 +2,24 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 50px 100px;
+  gap: 50px;
   h3 {
     font-family: "Butler";
     font-size: 2em;
   }
   img {
     width: 100%;
+    border: 1px solid black;
+  }
+  p {
+    font-family: "ApercuPro-ExtraLight";
+    line-height: 1.5em;
+  }
+}
+
+// Ipad
+@media only screen and (max-width: 768px) {
+  .aboutPage {
+    grid-template-columns: 1fr;
   }
 }

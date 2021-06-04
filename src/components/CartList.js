@@ -38,7 +38,7 @@ export default function CartList(props) {
             <input name="shipping" type="radio" />
             Send to my home
           </label>
-          <p>Shipping:</p>
+          <p>Shipping: FREE</p>
           <div className="line"></div>
           <p>TOTAL:</p>
           <button>Checkout</button>

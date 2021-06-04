@@ -27,7 +27,7 @@
 }
 
 @font-face {
-  font-family: "Butler";
+  font-family: "Butler", "Playfair Display", serif;
   src: local(Butler), format("woff");
   font-weight: normal;
 }
@@ -38,20 +38,24 @@
 }
 
 @font-face {
-  font-family: "ApercuPro-Medium";
+  font-family: "ApercuPro-Medium", "Poppins", sans-serif;
   src: local(ApercuPro-Medium), format("woff");
-  font-weight: normal;
+  font-weight: 600;
 }
 
 @font-face {
-  font-family: "ApercuPro-ExtraLight";
+  font-family: "ApercuPro-ExtraLight", "Poppins", sans-serif;
   src: local(ApercuPro-ExtraLight),
     url("../fonts/ApercuPro-ExtraLight.woff") format("woff");
-  font-weight: normal;
+  font-weight: 300;
 }
 
 @font-face {
-  font-family: "ApercuMonoPro-Light";
+  font-family: "ApercuMonoPro-Light", "Poppins", sans-serif;
   src: local(ApercuMonoPro-Light),
     url("../fonts/ApercuMonoPro-Light.woff") format("woff");
 }
+
+// GOOGLE FONTS FOR SECONDARY
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@100;300;600&display=swap");

@@ -4,28 +4,59 @@
   padding: 0;
   margin: 0;
   :nth-child(even) {
-    border-right: 1px solid white;
+    //border-right: 1px solid white;
+  }
+
+  .mobView {
+    display: none;
   }
   > div {
     display: grid;
     border-right: 1px solid #333333;
     border-bottom: 1px solid #333333;
-    padding: 10%;
+    padding: 5%;
 
     img,
     .aboutProduct {
       align-self: center;
       justify-self: center;
     }
+    img {
+      height: 15rem;
+    }
     .prodInfo {
       font-family: "ApercuPro-ExtraLight";
       margin: 5px;
       font-size: 0.8em;
     }
-    .singleImg {
+    h2 {
+      margin-bottom: 0;
+    }
+    select {
+      padding: 5px 10px;
+      border-radius: 20px;
+    }
+    .dd {
+      background-color: white;
+      border: 1px solid black;
+    }
+    .stars {
+      display: flex;
+      font-family: "ApercuPro-ExtraLight";
+      align-items: center;
+      .fa-star {
+        font-size: 0.8em;
+      }
+      p {
+        padding-top: 10px;
+      }
     }
     .extraImg {
     }
+  }
+  .noBorder,
+  .imgBord {
+    border-right: 1px solid white;
   }
 }
 .aboutProduct {
@@ -39,9 +70,8 @@
     font-size: 1.3em;
   }
   button {
+    @include btn(white, black);
     margin-top: 1em;
-    color: white;
-    background-color: black;
   }
 }
 .filtering {
@@ -87,6 +117,32 @@
     grid-template-columns: 100%;
     > div {
       border: white;
+    }
+    .mobView {
+      display: block;
+      padding: 20px 0;
+      width: 100%;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+
+      h3 {
+        cursor: pointer;
+        font-family: "ApercuPro-ExtraLight";
+        text-transform: uppercase;
+      }
+    }
+    .addBorder {
+      display: none;
+    }
+    .addBorder.active {
+      display: block;
+    }
+    .imgBord {
+      display: none;
+    }
+    .imgBord.active {
+      border-right: 1px solid white;
+      display: block;
     }
   }
 }

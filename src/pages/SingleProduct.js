@@ -26,6 +26,11 @@ export default function SingleProduct(props) {
     console.log(singleProduct.defaultProductVariant.grams);
   };
 
+  const handleClick = () => {
+    setClick(!clicked);
+  };
+  const [clicked, setClick] = useState(false);
+
   function Choose() {
     if (singleProduct.variants === 0) {
       return <p>N/A</p>;
@@ -78,36 +83,42 @@ export default function SingleProduct(props) {
         <Popup singleProduct={singleProduct} handleClose={closePopup} />
       )}
       <article className="singleProductPage">
-        <div className="addBorder">
+        <div>
           <img
             className="singleImg"
             src={singleProduct.defaultProductVariant.imageUrl}
           />
         </div>
-        <div>
+        <div className="noBorder">
           <div className="aboutProduct">
             <h1>{singleProduct.title}</h1>
             <h2>{singleProduct.defaultProductVariant.price + "kr"}</h2>
+            <h4 className="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i> <p>(48)</p> <p>Reed reviews</p>
+            </h4>
             <select>
-              <option value="1">50 ml</option>
-              <option value="2">30 ml</option>
+              <option className="dd" value="1">
+                50 ml
+              </option>
+              <option className="dd" value="2">
+                30 ml
+              </option>
             </select>
 
-            <h4>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              Reviews
-            </h4>
             <p className="prodInfo">
               {singleProduct.defaultProductVariant.title}
             </p>
             <button onClick={handleIncrement}>Add to cart</button>
           </div>
         </div>
-        <div className="addBorder">
+        <div className="mobView">
+          <h3 onClick={handleClick}>More description</h3>
+        </div>
+        <div className={clicked ? "addBorder active" : "addBorder"}>
           <div className="filtering">
             <li>
               <button onClick={() => setStatus(true)}>Description</button>
@@ -130,7 +141,7 @@ export default function SingleProduct(props) {
             </div>
           )}
         </div>
-        <div>
+        <div className={clicked ? "imgBord active" : "imgBord"}>
           <img
             src={singleProduct.defaultProductVariant.extraImg}
             className="extraImg"
