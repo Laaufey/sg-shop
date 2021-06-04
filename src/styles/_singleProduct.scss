@@ -3,9 +3,6 @@
   grid-template-columns: 50% 50%;
   padding: 0;
   margin: 0;
-  :nth-child(even) {
-    //border-right: 1px solid white;
-  }
 
   .mobView {
     display: none;
@@ -56,8 +53,6 @@
         font-weight: 300;
         font-weight: 300;
       }
-    }
-    .extraImg {
     }
   }
   .noBorder,
