@@ -28,6 +28,7 @@
       font-family: "ApercuPro-ExtraLight";
       margin: 5px;
       font-size: 0.8em;
+      padding-bottom: 1em;
     }
     h2 {
       margin-bottom: 0;
@@ -49,6 +50,8 @@
       }
       p {
         padding-top: 10px;
+        font-family: "ApercuPro-ExtraLight";
+        font-weight: 300;
       }
     }
     .extraImg {
@@ -79,11 +82,14 @@
   gap: 2em;
   li {
     list-style: none;
+
     button {
       padding-left: 0;
       border: none;
       text-decoration: underline;
       font-size: 1em;
+      font-family: "ApercuPro-ExtraLight";
+
       &:hover {
         background-color: white;
         color: black;

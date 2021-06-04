@@ -100,6 +100,9 @@ export default function SingleProduct(props) {
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i> <p>(48)</p> <p>Reed reviews</p>
             </h4>
+            <p className="prodInfo">
+              {singleProduct.defaultProductVariant.title}
+            </p>
             <select>
               <option className="dd" value="1">
                 50 ml
@@ -108,10 +111,7 @@ export default function SingleProduct(props) {
                 30 ml
               </option>
             </select>
-
-            <p className="prodInfo">
-              {singleProduct.defaultProductVariant.title}
-            </p>
+            <br />
             <button onClick={handleIncrement}>Add to cart</button>
           </div>
         </div>
