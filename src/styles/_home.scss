@@ -41,6 +41,9 @@
       font-size: 2.5em;
     }
   }
+  .shopNow {
+    width: 15em;
+  }
   .dots {
     text-align: center;
     grid-column-start: 1;
@@ -125,6 +128,9 @@
         font-size: 2em;
       }
     }
+    .shopNow {
+      width: 10em;
+    }
   }
   .headers {
     div {
@@ -141,6 +147,9 @@
       p {
         display: none;
       }
+    }
+    .shopNow {
+      width: auto;
     }
   }
 }
