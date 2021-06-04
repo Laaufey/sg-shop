@@ -23,13 +23,15 @@
         margin: 0;
         color: white;
         text-align: center;
-        font-family: "ApercuPro-ExtraLight";
+        font-family: "ApercuPro-ExtraLight", "Poppins", sans-serif;
+        font-weight: 300;
         text-transform: uppercase;
         padding: 15px;
       }
     }
     .pop-body {
-      font-family: "ApercuPro-Medium";
+      font-family: "ApercuPro-Medium", "Poppins", sans-serif;
+      font-weight: 600;
       padding: 50px 30px;
       display: grid;
       gap: 15px;
@@ -43,7 +45,8 @@
       }
       p {
         margin: 0;
-        font-family: "ApercuPro-ExtraLight";
+        font-family: "ApercuPro-ExtraLight", "Poppins", sans-serif;
+        font-weight: 300;
       }
       h3 {
         font-size: 0.9em;

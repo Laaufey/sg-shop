@@ -25,7 +25,8 @@
       height: 15rem;
     }
     .prodInfo {
-      font-family: "ApercuPro-ExtraLight";
+      font-family: "ApercuPro-ExtraLight", "Poppins", sans-serif;
+      font-weight: 300;
       margin: 5px;
       font-size: 0.8em;
       padding-bottom: 1em;
@@ -43,14 +44,16 @@
     }
     .stars {
       display: flex;
-      font-family: "ApercuPro-ExtraLight";
+      font-family: "ApercuPro-ExtraLight", "Poppins", sans-serif;
+      font-weight: 300;
       align-items: center;
       .fa-star {
         font-size: 0.8em;
       }
       p {
         padding-top: 10px;
-        font-family: "ApercuPro-ExtraLight";
+        font-family: "ApercuPro-ExtraLight", "Poppins", sans-serif;
+        font-weight: 300;
         font-weight: 300;
       }
     }
@@ -64,7 +67,8 @@
 }
 .aboutProduct {
   text-align: left;
-  font-family: "ApercuPro-Medium";
+  font-family: "ApercuPro-Medium", "Poppins", sans-serif;
+  font-weight: 600;
   h1 {
     text-transform: uppercase;
     font-size: 1.3em;
@@ -88,8 +92,8 @@
       border: none;
       text-decoration: underline;
       font-size: 1em;
-      font-family: "ApercuPro-ExtraLight";
-
+      font-family: "ApercuPro-ExtraLight", "Poppins", sans-serif;
+      font-weight: 300;
       &:hover {
         background-color: white;
         color: black;
@@ -133,7 +137,8 @@
 
       h3 {
         cursor: pointer;
-        font-family: "ApercuPro-ExtraLight";
+        font-family: "ApercuPro-ExtraLight", "Poppins", sans-serif;
+        font-weight: 300;
         text-transform: uppercase;
       }
     }

@@ -8,14 +8,16 @@
     display: grid;
     justify-self: center;
     h1 {
-      font-family: "Butler";
+      font-family: "Butler", "Playfair Display", serif;
     }
     p {
-      font-family: "ApercuPro-ExtraLight";
+      ffont-family: "ApercuPro-ExtraLight", "Poppins", sans-serif;
+      font-weight: 300;
       font-size: 1.3em;
     }
     li {
-      font-family: "ApercuPro-ExtraLight";
+      font-family: "ApercuPro-ExtraLight", "Poppins", sans-serif;
+      font-weight: 300;
     }
     button {
       align-self: center;
@@ -34,7 +36,8 @@
     justify-self: center;
     padding: 100px 25%;
     li {
-      font-family: "ApercuPro-ExtraLight";
+      font-family: "ApercuPro-ExtraLight", "Poppins", sans-serif;
+      font-weight: 300;
     }
   }
 }
