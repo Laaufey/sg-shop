@@ -7,12 +7,20 @@
   }
 }
 
+.pic1 {
+  background-image: url("../media/chanel-bigwindow.jpg");
+  transition: all 3s ease;
+}
+.pic2 {
+  background-image: url("../media/bioeffect-banner.jpg");
+  transition: all 3s ease;
+}
 .bigwindow {
   @include gridItem(1, -1, 1, 2);
-  background-color: palegoldenrod;
+
   //background-image: url("../media/bigWindow.jpg");
   //background-image: url("../media/bioeffect-bigwindow.jpg");
-  background-image: url("../media/chanel-bigwindow.jpg");
+  transition: all 5s ease;
   background-position: right;
   background-repeat: no-repeat;
   width: 100%;
@@ -27,10 +35,25 @@
     border-bottom: 1px solid #333333;
   }
   .text {
-    margin: 20%;
+    padding: 13% 20%;
     h1 {
       font-family: "Butler";
       font-size: 2.5em;
+    }
+  }
+  .dots {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    z-index: 1;
+    .fa-circle {
+      color: white;
+      cursor: pointer;
+      opacity: 50%;
+      padding: 1em;
+      &:hover {
+        opacity: 100%;
+      }
     }
   }
 }

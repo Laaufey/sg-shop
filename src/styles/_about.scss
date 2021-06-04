@@ -1,0 +1,12 @@
+.aboutPage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px 100px;
+  h3 {
+    font-family: "Butler";
+    font-size: 2em;
+  }
+  img {
+    width: 100%;
+  }
+}

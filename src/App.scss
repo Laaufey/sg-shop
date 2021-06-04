@@ -8,6 +8,7 @@
 @import "./styles/singleProduct";
 @import "./styles/footer";
 @import "./styles/popup";
+@import "./styles/about";
 
 // HIDDEN ON SCREENS LARGER THAN 600px
 
@@ -104,8 +105,11 @@ article {
     margin: 1em 0 0;
   }
   p {
-    margin: 0;
+    margin: 10px;
     margin-bottom: 1em;
+  }
+  .stars {
+    margin-bottom: 15px;
   }
   h4 {
     margin: 0;

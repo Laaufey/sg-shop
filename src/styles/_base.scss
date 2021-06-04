@@ -18,9 +18,11 @@
   padding: 0.7em;
   border: 1px solid black;
   font-family: "ApercuMonoPro-Light";
+  transition: all 0.3s ease;
   &:hover {
     color: $background;
     background-color: $color;
+    transition: all 0.3s ease;
   }
 }
 

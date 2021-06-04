@@ -31,7 +31,7 @@ export default function Lancome(props) {
     <main className="Makeup pageStructure">
       {console.log(cartArray)}
       <section>
-        <h1 className="pageName">Lancôme</h1>
+        <h1 className="lancome brandspace">Lancôme</h1>
         <div className="showProducts">
           {postProduct &&
             postProduct.map((product, index) => {
@@ -49,7 +49,13 @@ export default function Lancome(props) {
                       </span>
                     </Link>
                     <p>{product.defaultProductVariant.price + "kr"}</p>
-                    <h4>*****</h4>
+                    <h4 className="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </h4>
                     <button
                       onClick={() => handleIncrement(product.slug.current)}
                     >

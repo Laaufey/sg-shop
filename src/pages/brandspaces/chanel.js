@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "../../client";
+//import banner from "../../media/brandImages/chanel-bigwindow3.jpg";
 
 export default function Chanel(props) {
   const [postProduct, setPost] = useState(null);
@@ -31,7 +32,7 @@ export default function Chanel(props) {
     <main className="Makeup pageStructure">
       {console.log(cartArray)}
       <section>
-        <h1 className="pageName">Chanel</h1>
+        <h1 className="chanel brandspace">Chanel</h1>
         <div className="showProducts">
           {postProduct &&
             postProduct.map((product, index) => {
@@ -49,7 +50,13 @@ export default function Chanel(props) {
                       </span>
                     </Link>
                     <p>{product.defaultProductVariant.price + "kr"}</p>
-                    <h4>*****</h4>
+                    <h4 className="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </h4>
                     <button
                       onClick={() => handleIncrement(product.slug.current)}
                     >
