@@ -28,10 +28,6 @@
         text-transform: uppercase;
         padding: 15px;
       }
-      .btn-1 {
-        font-size: 0.8em;
-        padding: auto 0;
-      }
     }
     .pop-body {
       font-family: "ApercuPro-Medium", "Poppins", sans-serif;
@@ -58,14 +54,17 @@
       .pop-buttons {
         padding-right: 20px;
         display: grid;
-        .btn-1,
+
         .btn-2 {
-          font-size: 0.6em;
+          font-size: 0.8em;
           height: 50px;
           width: 100%;
         }
         .btn-1 {
           @include btn(black, white);
+          font-size: 0.8em;
+          height: 50px;
+          width: 100%;
         }
         a {
           align-self: center;
