@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/sg-shop/static/css/main.e64d3b98.chunk.css",
+    "main.css": "/sg-shop/static/css/main.667399fe.chunk.css",
     "main.js": "/sg-shop/static/js/main.cfca5e26.chunk.js",
     "main.js.map": "/sg-shop/static/js/main.cfca5e26.chunk.js.map",
     "runtime-main.js": "/sg-shop/static/js/runtime-main.e0ba11fd.js",
@@ -10,7 +10,7 @@
     "static/js/3.7c7919ff.chunk.js": "/sg-shop/static/js/3.7c7919ff.chunk.js",
     "static/js/3.7c7919ff.chunk.js.map": "/sg-shop/static/js/3.7c7919ff.chunk.js.map",
     "index.html": "/sg-shop/index.html",
-    "static/css/main.e64d3b98.chunk.css.map": "/sg-shop/static/css/main.e64d3b98.chunk.css.map",
+    "static/css/main.667399fe.chunk.css.map": "/sg-shop/static/css/main.667399fe.chunk.css.map",
     "static/js/2.45a06707.chunk.js.LICENSE.txt": "/sg-shop/static/js/2.45a06707.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/sg-shop/static/media/lancome-bigwindow.85c311ca.jpg",
     "static/media/BIOEFFECT-Brand-image.4f33852d.jpg": "/sg-shop/static/media/BIOEFFECT-Brand-image.4f33852d.jpg",
@@ -34,7 +34,7 @@
   "entrypoints": [
     "static/js/runtime-main.e0ba11fd.js",
     "static/js/2.45a06707.chunk.js",
-    "static/css/main.e64d3b98.chunk.css",
+    "static/css/main.667399fe.chunk.css",
     "static/js/main.cfca5e26.chunk.js"
   ]
 }
