@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/sg-shop/static/css/main.949cafb4.chunk.css",
-    "main.js": "/sg-shop/static/js/main.8ffb70c7.chunk.js",
-    "main.js.map": "/sg-shop/static/js/main.8ffb70c7.chunk.js.map",
+    "main.css": "/sg-shop/static/css/main.201655e2.chunk.css",
+    "main.js": "/sg-shop/static/js/main.08a828bb.chunk.js",
+    "main.js.map": "/sg-shop/static/js/main.08a828bb.chunk.js.map",
     "runtime-main.js": "/sg-shop/static/js/runtime-main.e0ba11fd.js",
     "runtime-main.js.map": "/sg-shop/static/js/runtime-main.e0ba11fd.js.map",
-    "static/js/2.7a156744.chunk.js": "/sg-shop/static/js/2.7a156744.chunk.js",
-    "static/js/2.7a156744.chunk.js.map": "/sg-shop/static/js/2.7a156744.chunk.js.map",
+    "static/js/2.45a06707.chunk.js": "/sg-shop/static/js/2.45a06707.chunk.js",
+    "static/js/2.45a06707.chunk.js.map": "/sg-shop/static/js/2.45a06707.chunk.js.map",
     "static/js/3.7c7919ff.chunk.js": "/sg-shop/static/js/3.7c7919ff.chunk.js",
     "static/js/3.7c7919ff.chunk.js.map": "/sg-shop/static/js/3.7c7919ff.chunk.js.map",
     "index.html": "/sg-shop/index.html",
-    "static/css/main.949cafb4.chunk.css.map": "/sg-shop/static/css/main.949cafb4.chunk.css.map",
-    "static/js/2.7a156744.chunk.js.LICENSE.txt": "/sg-shop/static/js/2.7a156744.chunk.js.LICENSE.txt",
+    "static/css/main.201655e2.chunk.css.map": "/sg-shop/static/css/main.201655e2.chunk.css.map",
+    "static/js/2.45a06707.chunk.js.LICENSE.txt": "/sg-shop/static/js/2.45a06707.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/sg-shop/static/media/chanel-bigwindow.e7ff8009.jpg",
     "static/media/BIOEFFECT-Brand-image.4f33852d.jpg": "/sg-shop/static/media/BIOEFFECT-Brand-image.4f33852d.jpg",
     "static/media/BIOTHERM-Brand-image.fe807168.jpg": "/sg-shop/static/media/BIOTHERM-Brand-image.fe807168.jpg",
@@ -21,8 +21,8 @@
     "static/media/GUERLAIN-Brand-image.739568b7.jpg": "/sg-shop/static/media/GUERLAIN-Brand-image.739568b7.jpg",
     "static/media/HR-Brand-image.7f7e7a8a.jpg": "/sg-shop/static/media/HR-Brand-image.7f7e7a8a.jpg",
     "static/media/LANCOME-Brand-image.3cfbef66.jpg": "/sg-shop/static/media/LANCOME-Brand-image.3cfbef66.jpg",
+    "static/media/banner-2.b6cc7f77.jpg": "/sg-shop/static/media/banner-2.b6cc7f77.jpg",
     "static/media/banner1.fd931f0b.jpg": "/sg-shop/static/media/banner1.fd931f0b.jpg",
-    "static/media/banner2.03b29e3b.jpg": "/sg-shop/static/media/banner2.03b29e3b.jpg",
     "static/media/banner3.a4ab48f0.jpg": "/sg-shop/static/media/banner3.a4ab48f0.jpg",
     "static/media/bigWindow.7acb2c05.jpg": "/sg-shop/static/media/bigWindow.7acb2c05.jpg",
     "static/media/facebook.2437e42a.png": "/sg-shop/static/media/facebook.2437e42a.png",
@@ -32,8 +32,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e0ba11fd.js",
-    "static/js/2.7a156744.chunk.js",
-    "static/css/main.949cafb4.chunk.css",
-    "static/js/main.8ffb70c7.chunk.js"
+    "static/js/2.45a06707.chunk.js",
+    "static/css/main.201655e2.chunk.css",
+    "static/js/main.08a828bb.chunk.js"
   ]
 }
