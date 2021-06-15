@@ -9,11 +9,11 @@
 }
 
 .pic1 {
-  background-image: url("../media/chanel-bigwindow.jpg");
+  background-image: url("../media/lancome-bigwindow.jpg");
   transition: all 3s ease;
 }
 .pic2 {
-  background-image: url("../media/bioeffect-banner.jpg");
+  background-image: url("../media/chanel-bigwindow.jpg");
   transition: all 3s ease;
 }
 .bigwindow {
@@ -25,7 +25,7 @@
   background-position: right;
   background-repeat: no-repeat;
   width: 100%;
-
+  background-size: cover;
   border-bottom: 1px solid #333333;
   //background-size: 100%;
   display: grid;
@@ -36,14 +36,28 @@
     border-bottom: 1px solid #333333;
   }
   .text {
-    padding: 13% 20%;
+    padding: 13% 15%;
     h1 {
-      font-family: "Butler", "Playfair Display", serif;
-      font-size: 2.5em;
+      font-family: "Butler-Medium", "Playfair Display", serif;
+      font-size: 3.5em;
+      font-weight: 100;
+      margin-bottom: 0;
+    }
+    p {
+      font-family: "ApercuPro-Light", "Poppins", sans-serif;
+      font-weight: 300;
+      font-size: 1.2em;
+      line-height: 1.4em;
+      margin-top: 0.4em;
     }
   }
   .shopNow {
-    width: 15em;
+    width: 11em;
+    font-weight: bold;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0);
+      color: black;
+    }
   }
   .dots {
     text-align: center;
@@ -76,7 +90,8 @@
     margin-bottom: 30px;
     color: black;
     text-align: center;
-    font-family: "Butler-UltraLight", "Playfair Display", serif;
+    font-family: "Butler", "Playfair Display", serif;
+    font-weight: 400;
   }
 
   // border-bottom: 1px solid #333333;
@@ -151,6 +166,7 @@
     }
     .shopNow {
       width: auto;
+      margin-top: 30px;
     }
   }
 }

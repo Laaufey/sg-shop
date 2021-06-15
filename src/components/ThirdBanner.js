@@ -9,12 +9,15 @@ export default function SecondBanner() {
       </div>
       <div className="bannerRight bannerText bannerThree">
         <div>
-          <h1>Be creative. Show your personality.</h1>
+          <h1>
+            Be creative. <br />
+            Show your personality.
+          </h1>
           <p>
-            Too much bare exposure to the sun can increase the risk of skin
-            cancer and cause early skin aging. It doesn't matter what season it
-            is or what the weather is like, those harmful ultraviolet rays are
-            abundant.
+            Do you use makeup to express your personality and creativity or
+            simply just for an extra bit of sparkle? whatever the reason, we
+            encourage you to use makeup in whatever way makes you feel good.
+            Just remember you look gorgeous with and without it!
           </p>
           <button>Shop makeup</button>
         </div>

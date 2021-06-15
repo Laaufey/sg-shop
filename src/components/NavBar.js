@@ -62,6 +62,9 @@ export default function Nav(props) {
             <li className="onScreens">
               <NavLink to="/cart">Cart({props.notificationsCount})</NavLink>
             </li>
+            <li>
+              <i class="fas fa-search"></i>
+            </li>
           </ul>
         </nav>
       </div>

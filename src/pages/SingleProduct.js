@@ -6,6 +6,7 @@ import BlockContent from "@sanity/block-content-to-react";
 import Popup from "../components/popup";
 import Recommended from "../components/recommended";
 import Similar from "../components/similar";
+import Review from "../media/Review.png";
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -30,6 +31,12 @@ export default function SingleProduct(props) {
     setClick(!clicked);
   };
   const [clicked, setClick] = useState(false);
+  const [openImg, setImg] = useState(false);
+
+  const handleImg = () => {
+    setImg(!openImg);
+    console.log("OPEN IMG");
+  };
 
   function Choose() {
     if (singleProduct.variants === 0) {
@@ -82,6 +89,11 @@ export default function SingleProduct(props) {
       {isOpen && (
         <Popup singleProduct={singleProduct} handleClose={closePopup} />
       )}
+      <img
+        onClick={handleImg}
+        className={openImg ? "review active" : "review"}
+        src={Review}
+      />
       <article className="singleProductPage">
         <div>
           <img
@@ -91,6 +103,7 @@ export default function SingleProduct(props) {
         </div>
         <div className="noBorder">
           <div className="aboutProduct">
+            <h3>{singleProduct.tags[1]}</h3>
             <h1>{singleProduct.title}</h1>
             <h2>{singleProduct.defaultProductVariant.price + "kr"}</h2>
             <h4 className="stars">
@@ -98,7 +111,10 @@ export default function SingleProduct(props) {
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i> <p>(48)</p> <p>Reed reviews</p>
+              <i class="fas fa-star"></i> <p>(48)</p>{" "}
+              <p className="reviews" onClick={handleImg}>
+                Read reviews
+              </p>
             </h4>
             <p className="prodInfo">
               {singleProduct.defaultProductVariant.title}
@@ -124,7 +140,7 @@ export default function SingleProduct(props) {
               <button onClick={() => setStatus(true)}>Description</button>
             </li>
             <li>
-              <button onClick={() => setStatus(false)}>Ingrediants</button>
+              <button onClick={() => setStatus(false)}>Ingredients</button>
             </li>
           </div>
           {status ? (

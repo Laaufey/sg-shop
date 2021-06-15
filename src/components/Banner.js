@@ -9,7 +9,10 @@ export default function banner() {
       </div>
       <div className="bannerRight bannerText bannerOne">
         <div>
-          <h1>Be smart. Protect your skin.</h1>
+          <h1>
+            Be smart. <br />
+            Protect your skin.
+          </h1>
           <p>
             It doesn't matter what season it is or what the weather is like,
             those harmful ultraviolet rays are abundant. That’s why we recommend

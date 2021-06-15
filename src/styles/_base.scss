@@ -14,10 +14,11 @@
   background-color: $background;
   border-radius: 20em;
   cursor: pointer;
-  font-size: 0.8em;
+  font-size: 1em;
   text-transform: uppercase;
-  padding: 1em;
+  padding: 1.15em 2em 1em;
   padding-top: 1.15em;
+
   border: 1px solid black;
   font-family: "ApercuMonoPro-Light", "Poppins", sans-serif;
   transition: all 0.3s ease;
@@ -30,13 +31,18 @@
 
 @font-face {
   font-family: "Butler", "Playfair Display", serif;
-  src: local(Butler), format("woff");
-  font-weight: normal;
+  src: local(Butler_Regular), url("../fonts/Butler_Regular.otf") format("otf");
+  font-weight: 100;
 }
 @font-face {
   font-family: "Butler-UltraLight";
   src: local(Butler-UltraLight), format("woff");
-  font-weight: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Butler-Medium";
+  src: local(Butler_Medium), url("../fonts/Butler_Medium.otf") format("otf");
+  font-weight: 100;
 }
 
 @font-face {
@@ -50,6 +56,19 @@
   font-weight: 300;
   src: local(ApercuPro-ExtraLight),
     url("../fonts/ApercuPro-ExtraLight.woff") format("woff");
+}
+@font-face {
+  font-family: "ApercuPro-Light";
+  font-weight: 300;
+  src: local(ApercuPro-Light),
+    url("../fonts/ApercuPro-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "ApercuPro-Regular";
+  font-weight: 300;
+  src: local(ApercuPro-Regular),
+    url("../fonts/ApercuPro-Regular.woff") format("woff");
 }
 
 @font-face {

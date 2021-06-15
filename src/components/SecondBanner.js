@@ -1,12 +1,15 @@
 import React from "react";
-import imgTwo from "../media/banner2.jpg";
+import imgTwo from "../media/banner-2.jpg";
 
 export default function SecondBanner() {
   return (
     <>
       <div className="bannerLeft bannerText bannerTwo">
         <div>
-          <h1>Be kind to yourself. Skincare is self-care. </h1>
+          <h1>
+            Be kind to yourself. <br />
+            Skincare is self-care.{" "}
+          </h1>
           <p>
             Create your own self-care rituals with our high quality luxury
             skincare products. Go beyond just fixing dry, cracked skin by also
